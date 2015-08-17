@@ -2,6 +2,19 @@
   "builders": [
     {
       "type": "amazon-ebs",
+      "name": "empire-eu-west-1",
+      "access_key": "",
+      "secret_key": "",
+      "region": "eu-west-1",
+      "source_ami": "ami-47a23a30",
+      "instance_type": "m3.medium",
+      "ssh_username": "ubuntu",
+      "ssh_timeout": "5m",
+      "ami_name": "Empire PaaS {{isotime | clean_ami_name}}",
+      "ami_groups": ["all"]
+    },
+    {
+      "type": "amazon-ebs",
       "name": "empire-us-east-1",
       "access_key": "",
       "secret_key": "",
