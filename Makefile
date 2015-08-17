@@ -17,6 +17,9 @@ us-west-1:
 us-west-2:
 	packer build --only=empire-us-west-2 $(TEMPLATE)
 
+eu-west-1:
+	packer build --only=empire-eu-west-1 $(TEMPLATE)
+
 ami-all:
 	packer build $(TEMPLATE)
 
